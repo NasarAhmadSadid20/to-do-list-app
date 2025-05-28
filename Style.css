@@ -104,3 +104,41 @@ li {
 .actions .delete:hover {
   background-color: #c0392b;
 }
+
+@media (max-width: 600px) {
+  #todoApp {
+    padding: 20px 15px;
+  }
+
+  #todoForm form {
+    flex-direction: column;
+    gap: 15px;
+    align-items: stretch;
+  }
+
+  #taskInput, #taskForm button {
+    width: 100%;       /* هر دو 100% عرض */
+    min-width: auto;
+    box-sizing: border-box;
+  }
+
+  li {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+  }
+
+  .actions {
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .actions button {
+    flex: 1;
+    margin-left: 0;
+    margin-right: 10px;
+  }
+}
+
